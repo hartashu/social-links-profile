@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/hartashu/qr-code-component)
-- Live Site URL: [GitHub Pages](https://hartashu.github.io/qr-code-component/)
+- Solution URL: [GitHub](https://github.com/hartashu/social-links-profile)
+- Live Site URL: [GitHub Pages](https://hartashu.github.io/social-links-profile/)
 
 ## My process
 
