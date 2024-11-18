@@ -59,67 +59,74 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 
-  CSS
+  Style
 */
 
-body {
-  --body-padding: 1.5rem;
+.page {
+  --page-padding: 1.5rem;
 
   background-color: var(--clr-grey-900);
   font-family: var(--ff-base);
+  padding: 0 var(--page-padding);
+}
+
+.main {
   height: 100vh;
-  padding: 0 var(--body-padding);
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   --card-padding: 1.5rem;
-  --card-border-radius: 0.75rem;
   --card-spacing: 1.5rem;
-
   --card-img-width: 88px;
   --card-img-height: 88px;
-
-  --card-name-group-spacing: 0.25rem;
 
   /* desktop */
   --card-padding-desktop: 2.5rem;
 
-  width: 327px;
+  flex: 1;
   background-color: var(--clr-grey-800);
-  border-radius: var(--card-border-radius);
+  border-radius: 0.75rem;
   padding: var(--card-padding);
 
   display: flex;
   flex-direction: column;
   gap: var(--card-spacing);
 
-  @media screen and (min-width: 40em) {
-    width: 456px;
-    padding: var(--card-padding-desktop);
+  @media screen and (min-width: 48em) {
+    max-width: 456px;
+  }
+
+  @media screen and (min-width: 90em) {
+    max-width: 384px;
   }
 }
 
-.card__img {
+.card__media {
   width: var(--card-img-width);
   height: var(--card-img-height);
   border-radius: calc(0.5 * var(--card-img-height));
+  overflow: hidden;
   margin: 0 auto;
 }
 
-.card__content {
+.card__text {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-spacing);
 }
 
-.card__content > *:last-child {
+/* .card__text > *:last-child {
   margin-top: var(--card-spacing);
-}
+} */
 
 .card__name-group {
   display: flex;
   flex-direction: column;
-  gap: var(--card-name-group-spacing);
+  gap: 0.25rem;
 }
 
 .card__name {
@@ -140,14 +147,14 @@ body {
   font-size: 0.875rem;
 }
 
-.card__link-list {
+.card__list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.card__link-item {
+.card__item {
   background-color: var(--clr-grey-700);
   text-align: center;
   border-radius: 0.5rem;
@@ -156,15 +163,15 @@ body {
   transition: background-color 0.15s;
 }
 
-.card__link-item:hover {
+.card__item:hover {
   background-color: var(--clr-green);
   
-  .card__anchor {
+  .card__link {
     color: var(--clr-grey-700);
   }
 }
 
-.card__anchor {
+.card__link {
   color: var(--clr-white);
   font-weight: var(--fw-bold);
   font-size: 0.875rem;

@@ -1,6 +1,6 @@
 # Frontend Mentor - Social links profile solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
 
 ## Table of contents
 
@@ -37,6 +37,7 @@ Users should be able to:
 
 ### Built with
 
+- Using BEM naming convention
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
@@ -48,12 +49,16 @@ Users should be able to:
 - Centering card horizontally and vertically.
 - Custom properties, CSS units, transform property, position property, and so on.
 - Proper semantic HTML (still a lot to learn about this).
-- CSS Methodology (BEM - Block Element Modifier).
-- There is always a little gap with img tag and a tag when their display properties not set to block.
+- CSS naming convention (BEM - Block Element Modifier).
+- There is always a little gap with  tag and  tag when the display property not set to block. Set the display to block, solve the problem.
+- For flex items, if we want to let the item to stretch to its max width, don't forget to set the item's flex property to 1.
 
 ### Continued development
 
-Keep learning and improving in every aspect.
+- Semantics HTML and accessibility
+- Use BEM naming convention more efficiently
+- Make a proper utility classes in CSS
+- Make a modular, sustain, and maintain-able code to work with a team
 
 ### Useful resources
 
